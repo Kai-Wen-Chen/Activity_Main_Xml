@@ -1,0 +1,31 @@
+activity_main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+	XML(Extensible Markup Language)是一種標記描述語言，類似網頁使用的HTML，此行為XML檔的固定開頭內容，指示這個文字檔案是以XML格式描述的
+
+<LinearLayout></LinearLayout>
+	LinearLayout(線性版面配置)，此指包含在這個標籤內所有元件的配置方式為一個接一個排列展示
+
+xmlns:android="http://schemas.android.com/apk/res/android
+	xmlns這串敘述為宣告此XML檔的namespace，後面接的URL(網址)表示這個檔案會參照到Android namespace提供的定義，所有Android版面配置檔案的最外層標籤中，都必須包含這個屬性
+
+android:layout_width
+	設定該元件的寬，如設定為fill_parent則表示寬度填滿整個上層介面元件(此為LinearLayout)
+
+android:layout_height
+	設定該元件的長，如設定為wrap_content則表示會隨著裡面的內容多寡改變高度
+
+android:orientation
+	設定該元件(版面)的走向，如LinearLayout中，設定vertical，則會將其內含的元件由上而下排列
+
+android.view.ViewGroup
+	定義各種layout的基礎類別，如LinearLayout、FrameLayout、TableLayout、AbsoluteLayout
+
+<TextView></TextView>
+	文字檢視，其作用是顯示文字到螢幕上
+
+<TextView ... />
+	不使用</TextView>而是/>作為結尾表示此元件中不再包含其他元件，即此元件為這個螢幕中最小的組成單元
+
+android:text
+	為TextView主要的屬性，此定義要顯示的文字內容
